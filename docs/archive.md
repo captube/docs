@@ -7,8 +7,8 @@ Rest APIs which are related with accessing archive.
 `archive/list?pageFrom={}&pageTo={}`
 
 * path param <br>
-`pageFrom - start number of page (optional)` <br> 
-`pageFrom - end number of page (optional)`
+`pageFrom` - start number of page (optional) <br> 
+`pageFrom` - end number of page (optional)
  
 * response
 
