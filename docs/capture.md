@@ -10,8 +10,8 @@ Rest APIs which are related with Capture.
 
     Parameter | Type | Required / Optional | 
     :-----------: |:-------------:|:-------------:| 
-    |url|String|required|
-    |language|String|optional (default = eng)|
+    |url|string|required|
+    |language|string|optional (default = eng)|
     |numberToCapture|int|optional|
     |startTimeStamp|int|optional|
     |endTimeStamp|int|optional|
@@ -22,7 +22,7 @@ Rest APIs which are related with Capture.
     :-----------:|:-------------:|:-------------:|
     id|string|Required
     title|string|Required   
-    captureItems|Array|Required
+    captureItems|array|Required
     captureItems.object.url|string|Required
     captureItems.object.startTime|int|Required
     captureItems.object.endTime|int|Required
