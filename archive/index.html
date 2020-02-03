@@ -120,7 +120,8 @@
 <li>
 <p>path param <br>
 <code>pageFrom</code> - start number of page (optional) <br> 
-<code>pageFrom</code> - end number of page (optional)</p>
+<code>pageTo</code> - end number of page (optional) <br></p>
+<p>If above field is not provided, it will returns all of the archives</p>
 </li>
 <li>
 <p>response</p>
@@ -134,12 +135,17 @@
 </thead>
 <tbody>
 <tr>
-<td align="center">id</td>
+<td align="center">archives</td>
+<td align="center">array</td>
+<td align="center">Required</td>
+</tr>
+<tr>
+<td align="center">archives.object.id</td>
 <td align="center">string</td>
 <td align="center">Required</td>
 </tr>
 <tr>
-<td align="center">title</td>
+<td align="center">archives.object.title</td>
 <td align="center">string</td>
 <td align="center">Required</td>
 </tr>
@@ -175,7 +181,7 @@
 </tr>
 <tr>
 <td align="center">items</td>
-<td align="center">Array</td>
+<td align="center">array</td>
 <td align="center">Required</td>
 </tr>
 <tr>
