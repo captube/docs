@@ -4,13 +4,13 @@ Rest APIs which are related with accessing archive.
 
 ## Getting Archives
 * GET <br> 
-`archive/list?pageFrom={}&pageTo={}`
+`archive/list?pageKey={}&pageSize={}`
 
 * path param <br>
-`pageFrom` - start number of page (optional) <br> 
-`pageTo` - end number of page (optional) <br>
+`pageKey` - key value for pagination  (optional) <br>
+`pageSize` - pageSize from pageKey or latest (optional) <br> 
 
-    If above field is not provided, it will returns all of the archives
+    If above fields are not provided, it will returns {pageSize (default 25)} archives from latest.
  
 * response
 
@@ -19,6 +19,7 @@ Rest APIs which are related with accessing archive.
     archives|array|Required    
     archives.object.id|string|Required
     archives.object.title|string|Required
+    nextPageKey|string|Optional
     
 ## Getting Images
 * GET <br> 
