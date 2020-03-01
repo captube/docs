@@ -115,13 +115,13 @@
 <ul>
 <li>
 <p>GET <br> 
-<code>archive/list?pageFrom={}&amp;pageTo={}</code></p>
+<code>archive/list?pageKey={}&amp;pageSize={}</code></p>
 </li>
 <li>
 <p>path param <br>
-<code>pageFrom</code> - start number of page (optional) <br> 
-<code>pageTo</code> - end number of page (optional) <br></p>
-<p>If above field is not provided, it will returns all of the archives</p>
+<code>pageKey</code> - key value for pagination  (optional) <br>
+<code>pageSize</code> - pageSize from pageKey or latest (optional) <br> </p>
+<p>If above fields are not provided, it will returns {pageSize (default 25)} archives from latest.</p>
 </li>
 <li>
 <p>response</p>
@@ -148,6 +148,11 @@
 <td align="center">archives.object.title</td>
 <td align="center">string</td>
 <td align="center">Required</td>
+</tr>
+<tr>
+<td align="center">nextPageKey</td>
+<td align="center">string</td>
+<td align="center">Optional</td>
 </tr>
 </tbody>
 </table>
