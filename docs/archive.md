@@ -18,6 +18,7 @@ Rest APIs which are related with accessing archive.
     :-----------:|:-------------:|:-------------:|
     archives|array|Required    
     archives.object.id|string|Required
+    archives.object.thumbnailUrl|string|Required
     archives.object.title|string|Required
     nextPageKey|string|Optional
     
@@ -33,6 +34,7 @@ Rest APIs which are related with accessing archive.
     Name | Type |Require/Optional| 
     :-----------:|:-------------:|:-------------:|
     title|string|Required
+    thumbnailUrl|string|Required
     items|array|Required
     items.object.url|string|Required
     items.object.startTime|int|Required
